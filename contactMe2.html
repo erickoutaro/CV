@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contactMe2</title>
+</head>
+<body>
+    <h1>My Contact Details</h1>
+    <p>My Fiction Address</p>
+    <p>0972886368</p>
+    <p>eric.koutaro@gmail.com</p>
+    <hr size="3" noshade>
+
+    <!-- 之後講到css javascript會讓大家在更了解 form attribute的action method -->
+    <!-- 這裡是帶你回到home page的index.html -->
+    <!-- action attribute在說當你按下submit button你會發生什麼事情 -->
+    <!-- form 的action attribute的功能是跟form input的submit相關 -->
+    <!-- <form class="" action="index.html" method="post"> -->
+
+
+        <!-- form enctype(encoding type) attribute 的text/plain在說 -->
+        <!-- 再說明(specify)我們的網頁是encoding by UTF-8 -->
+        <!-- 預設是UTF-8，所以會跑出亂碼name = Hey + there % 21 -->
+
+        <!-- form method attribute 的post在說 -->
+        <!-- 把form 下面的input field tag的東西，全都傳送到．預設mail client -->
+
+        <!-- form action attribute 的mailto在說 -->
+        <!-- 當你按下submit button 打開你的預設mail client:google account -->
+        <form action="mailto:eric.koutaro@gmail.com" method="post" enctype="text/plain">
+        
+
+        <!-- 但是，之後會教javascript會有更好用的分類data方，會回頭再回顧form Tag -->
+        <!-- yourName=ERIC -->
+        <!-- yourEmail=eric.koutaro@gmail.com -->
+        <!-- yourMessage=hi there -->
+        <!-- 因為剛剛我們把name attribute加上了值，所以網站會知道要怎麼分費這些data -->
+        <!-- 設定一下form input 的name attribute的值 -->
+        <label for="">Your Name:</label>
+        <input type="text" name="yourName" value=""><br>
+        
+        <label for="">Your Email:</label>
+        <!-- type="email"有預設的validation，告訴你錯了(之後還會教你更厲害的validation) -->
+        <input type="email" name="yourEmail" value=""><br>
+        
+        <label for="">Your Message:</label>
+        <!-- textarea element tag有兩個attribute: col & row -->
+        <!-- row有多高(一行一行往下堆疊) cols(column)(你的網站有多寬) -->
+        <!-- <textarea name="" id="" rows="10" cols="30" style="width: 452px; height: 220px;"></textarea> -->
+        <textarea name="yourMessage" id="" rows="10" cols="30" ></textarea><br>
+        <input type="submit" name="">
+        </form>
+</body>
+</html>
